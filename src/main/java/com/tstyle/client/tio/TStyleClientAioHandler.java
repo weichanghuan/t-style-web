@@ -22,6 +22,7 @@ import org.tio.core.intf.Packet;
 public class TStyleClientAioHandler implements ClientAioHandler {
 
     private final ConcurrentHashMap<String, BlockingQueue<MessagePacket>> responseMap = new ConcurrentHashMap<String, BlockingQueue<MessagePacket>>();
+    @SuppressWarnings("unused")
     private static final Logger logger = LoggerFactory.getLogger(TStyleClientAioHandler.class);
     private static MessagePacket heartbeatPacket = new MessagePacket();
 

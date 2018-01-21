@@ -5,8 +5,6 @@ import com.tstyle.constants.Constants;
 import com.tstyle.listener.AioCommonListenerImpl;
 import com.tstyle.protocol.TStyleChannelContext;
 import com.tstyle.protocol.packet.MessagePacket;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import org.slf4j.Logger;
@@ -46,8 +44,6 @@ public class TStyleClient {
 
     @Autowired
     private TStyleClientAioHandler tStyleClientAioHandler;
-
-    private ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
 
     // 服务器节点
     public static Node serverNode = new Node(host, port);
