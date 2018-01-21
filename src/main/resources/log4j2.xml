@@ -2,8 +2,8 @@
 <Configuration status="debug" monitorInterval="30">
 
 	<properties>
-		<property name="logPath">/data/logs/otc-invest-web</property>
-		<property name="rollingLogName">otc-invest-web</property>
+		<property name="logPath">/data/logs/t-style-web</property>
+		<property name="rollingLogName">t-style-web</property>
 		<property name="mainLogName">main</property>
 	</properties>
 
@@ -56,7 +56,7 @@
 		<logger name="txServiceLog" level="info" additivity="false">
              <appender-ref ref="serviceRouting"/>
         </logger>
-		<logger name="com.howbuy" level="info" additivity="false">
+		<logger name="com.tstyle" level="info" additivity="false">
              <appender-ref ref="RollingFile"/>
         </logger>      
         <root level="info">
