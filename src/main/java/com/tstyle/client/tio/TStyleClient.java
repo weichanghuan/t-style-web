@@ -122,7 +122,8 @@ public class TStyleClient {
     public void stop() {
         if (ProtocolHandlerFactory.PROTOCOL_TYPE_SOCKET.equals(protocolType)) {
             logger.info("destroy client resources");
-            Aio.close(channelContext, "remark");
+            boolean flag = aioClient.stop();
+            // Aio.close(channelContext, "remark");
         }
     }
 
